@@ -1,0 +1,28 @@
+:root {
+    --background: #251101;
+    --main: #254D32;
+    --border: #595959;
+    --text: #F9F8F8;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.main_container {
+    height: 100vh;
+    width: 100vw;
+    background: var(--background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
