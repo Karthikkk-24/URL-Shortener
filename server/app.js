@@ -1,7 +1,10 @@
+
 import axios from 'axios';
 import cors from 'cors';
 import express from 'express';
+import shortid from 'shortid';
 
+const urlDatabase = {};
 
 const app = express();
 
@@ -10,7 +13,11 @@ app.use(express.json());
 
 app.post('/shorten', async (req, res) => {
     const { url } = req.body;
-    res.send({url});
+    const shortURL = shortid.generate();
+
+    const nothing = urlDatabase[shortURL] = url;    
+
+    res.send({nothing});
 });
 
 app.listen((3000), () => {
