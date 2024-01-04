@@ -62,7 +62,7 @@ input {
     height: 6vh;
     color: var(--text);
     padding-left: 1vw;
-    font-size: 2.5vh;
+    font-size: 2vh;
     border: 0.2vh solid var(--border);
     background: var(--background);
     border-radius: 1vh;
@@ -72,7 +72,7 @@ textarea {
     width: 100%;
     color: var(--text);
     padding-left: 1vw;
-    font-size: 2.5vh;
+    font-size: 2vh;
     border: 0.2vh solid var(--border);
     background: var(--background);
     border-radius: 1vh;
